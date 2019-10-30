@@ -1,0 +1,34 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+@media screen and (max-width: $desktopWidth) {
+	font-size: 16px;
+}
+@media screen and (max-width: $tableWidth) {
+	font-size: 15px;
+}
+@media screen and (max-width: $phoneWidth) {
+	font-size: 14px;
+}
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0;
+	}
+}
+body {
+	font-family: $mainFont;
+}
+a {
+	text-decoration: none;
+}
+section {
+	position: relative;
+	padding: 0 0; // 1
+}
+.wrapper {
+
+}
+
+@import "modules/wrapper";

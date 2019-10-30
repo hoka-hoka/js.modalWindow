@@ -1,0 +1,13 @@
+@function em($pixel, $context: $mainFontSize) {
+	@if (unitless($pixel)) {
+		$pixel: $pixel * 1px;
+	}
+	@if (unitless($context)) {
+		$context: $context * 1px;
+	}
+	@return $pixel / $context * 1em;
+}
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}

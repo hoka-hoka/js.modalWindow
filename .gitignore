@@ -1,0 +1,37 @@
+# files abd folder
+
+# comments
+# *.log - all .log
+# *.py[co] - *.pyc, *.pyo
+# migrate-201[5-7]* // migrate-2015, migrate-2016few, migrate-2017, not 2018
+# *py? // .pyc, .pyo ... , not py
+
+# only folder
+
+# build/ // build/ , script/build
+# /build/ // build
+# secret/key // secret/key, not docs/secret/key
+# doc/*.html // doc/file.html not somewthere/doc/file.html
+# /*.txt // my.txt not somewthere/my.txt
+# user/*/private // not user/file/any/private
+
+# app/cahe // // внутри от корня дирретории
+# */app/cache // внутри дирректории на один уровень ниже
+# **/app/cache // где угодно
+# docs/**/*.html // фрагмент пути
+
+# .* // исключаем всё, кроме:
+# !.gitattribute
+# !.gitigonre
+
+# Doesn't work
+# /install/
+# !install/package.html
+
+# Instead
+# /install/*
+# !install/package.html
+
+/dist/
+
+/node_modules/

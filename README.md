@@ -1,11 +1,13 @@
-# Webpack
+# Webpack  
 project builder
-### Установка
-Установка модуля
 
-```npm install --save-dev webpack```
+### Установка  
 
-Установка зависимостей
+Установка зависимостей  
+`npm i`
 
-```npm i```
-* * *
+Разработка  
+`npm run dev`
+
+Сборка
+`npm run build`

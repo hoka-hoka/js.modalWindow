@@ -1,0 +1,19 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    if ( templates == 'modalWindow' )
+      base(href="./")
+    else
+      base(href="../")
+  title #{title}
+body(id=title)
+  each temp in templates
+    case temp
+      when "modalWindow"
+        include ../includes/modalWindow
+

@@ -1,0 +1,55 @@
+html {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+}
+body {
+  margin: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+body *:after, body *:before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+section {
+  position: relative;
+  padding: 0 0;
+}
+
+@for $i from 1 through 6 {
+  // h#{$i} {
+  //  color: $mainTitleBlock;
+  // }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+}
+// button {
+//   background: none;
+//   border: none;
+//   display: flex;
+//   padding: 0;
+//   cursor: pointer;
+// }
+p {
+  margin: 0;
+}
+hr {
+  margin: 0;
+  border: none;
+}
+fieldset {
+  border: unset;
+  margin: 0;
+  padding: 0;
+}

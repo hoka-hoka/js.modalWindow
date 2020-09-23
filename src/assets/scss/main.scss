@@ -1,34 +1,23 @@
 @import "utils/libs";
 @import "utils/vars";
-@import "utils/mixins";
 @import "utils/fonts";
+@import "utils/mixins";
+@import "utils/normalize";
 
-@media screen and (max-width: $desktopWidth) {
-	font-size: 16px;
-}
-@media screen and (max-width: $tableWidth) {
-	font-size: 15px;
-}
-@media screen and (max-width: $phoneWidth) {
-	font-size: 14px;
-}
-@for $i from 1 through 6 {
-	h#{$i} {
-		margin: 0;
-	}
-}
-body {
-	font-family: $mainFont;
-}
-a {
-	text-decoration: none;
-}
-section {
-	position: relative;
-	padding: 0 0; // 1
-}
-.wrapper {
+//@import "modules/arrow/arrow";
 
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-@import "modules/wrapper";
+@import "modules/dialog-backdrop/dialog-backdrop";
+@import "modules/hidden/hidden";

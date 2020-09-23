@@ -1,0 +1,36 @@
+block variable
+
+button.btn1-js Add Delivery Address
+
+.dialog1-js.hidden( role="dialog"
+             aria-labelledby="dialog1_label"
+             aria-modal="true")
+  h2.dialog_label Add Delivery Address
+  .dialog_form
+    .dialog_form_item
+      label
+        span.label_text Street:
+        input(type="text" class="wide_input")
+  .dialog_form_item
+    label
+      span.label_text City:
+      input.city_input(type="text")
+  .dialog_form_item
+    label(for="special_instructions")
+      span.label_text Special instructions:
+    input.wide_input( type="text"
+           aria-describedby="special_instructions_desc")
+    div.label_info For example, gate code or other information to help the driver find you
+  button.dialog1-close Close
+  button.btn2-js Open
+
+.dialog2-js.hidden( role="dialog"
+             aria-labelledby="dialog2_label"
+             aria-describedby="dialog2_desc"
+             aria-modal="true")
+  h2.dialog2_label Verification Result
+  .dialog_desc
+    p(tabindex="-1") This is just a demonstration. If it were a real application, it would provide a message telling whether the entered address is valid.
+  .dialog_form_actions
+    a(href="#") link to help
+  button.dialog2-close Close

@@ -122,6 +122,6 @@ $('.btn2-js').on('click', function(event) {
 Почта: sff1.tpu.ru
 
 ### Вдохновлён
-[Документация](https://github.com/hoka-hoka/multirange/wiki) для получения описания общей структуры приложения, а также UML-диаграммы. 
+[шаблона проектирования модального диалога в методиках разработки WAI-ARIA 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/#dialog_modal) 
 
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="./">
+  <link href="./assets/css/home.css?1933ff49a32380e512dd" rel="stylesheet"></head>
+  <title>modalWindow</title>
+</html>
+<body id="modalWindow">
+  <button class="btn1-js">Add Delivery Address</button>
+  <div class="dialog1-js hidden dialog" role="dialog" aria-labelledby="dialog1_label" aria-modal="true">
+    <h2 class="dialog_label">Add Delivery Address</h2>
+    <div class="dialog_form">
+      <div class="dialog_form_item">
+        <label><span class="label_text">Street:</span>
+          <input class="wide_input" type="text">
+        </label>
+      </div>
+    </div>
+    <div class="dialog_form_item">
+      <label><span class="label_text">City:</span>
+        <input class="city_input" type="text">
+      </label>
+    </div>
+    <div class="dialog_form_item">
+      <label for="special_instructions"><span class="label_text">Special instructions:</span></label>
+      <input class="wide_input" type="text" aria-describedby="special_instructions_desc">
+      <div class="label_info">For example, gate code or other information to help the driver find you</div>
+    </div>
+    <button class="dialog1-close">Close</button>
+    <button class="btn2-js">Open</button>
+  </div>
+  <div class="dialog2-js hidden dialog" role="dialog" aria-labelledby="dialog2_label" aria-describedby="dialog2_desc" aria-modal="true">
+    <h2 class="dialog2_label">Verification Result</h2>
+    <div class="dialog_desc">
+      <p tabindex="-1">This is just a demonstration. If it were a real application, it would provide a message telling whether the entered address is valid.</p>
+    </div>
+    <div class="dialog_form_actions"><a href="#">link to help</a></div>
+    <button class="dialog2-close">Close</button>
+  </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="./assets/js/home.js?1933ff49a32380e512dd"></script></body>
